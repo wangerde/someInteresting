@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript by Abby</title>
+</head>
+<body>
+<button onclick="sayHello.call(p1)">click</button>
+<button onclick="update.call(p1,11,22,33)">btn2</button>
+<script type="text/javascript">
+//第一题
+// 	function f1(){
+// 　　　　var n=999;
+
+// 　　　　nAdd=function(){n+=1}//匿名函数是全局的
+
+// 　　　　function f2(){
+// 　　　　　　alert(n);
+// 　　　　}
+// 　　　　return f2;
+// 　　}
+// 　　var result=f1();
+// 　　result(); 
+// 　　nAdd();
+// 　　result(); 
+
+
+//第二题
+// 　var name = "Hi Window";   
+// 　var object = {   
+// 　　　　name : "My Object",   
+// 　　　　getNameFunc : function(){   
+// 　　　　　　return function(){   
+// 			   return this.name;   
+// 　　　　　};   
+// 　　　　}   
+// };   
+// //alert(object.getNameFunc()());
+// alert(object.getNameFunc().call(object));
+
+
+//第三题
+	// var y = 2;
+	// function test(){
+	// 	this.y = 1;
+		
+	// }
+
+	// // test();
+	// // alert(y);
+
+	// t1 = new test();
+	// alert(y);
+
+
+
+//第四题
+		// function outerFun()
+		// {
+		//  var a=0;
+		//  function innerFun()
+		//  {
+		//   a++;
+		//   alert(a);
+		//  }
+		//  return innerFun;  
+		// }
+		// var obj=outerFun();
+		// obj();  
+		// obj();  
+		// var obj2=outerFun();
+		// obj2();  
+		// obj2();  
+
+//第五题
+		// var someone={
+		// 	name:'Bob',
+		// 	showName: function(){
+		// 		alert(this.name);	
+		// 	}
+		// }
+		// var other = {
+		// 	name:'Karen',
+		// 	showName:someone.showName
+		// }
+		// someone.showName();
+
+//第六题
+		// var p1 = {score:88,age:27,size:7};
+		// var update=function(a,b,c){
+		// 	this.a = a;
+		// 	this.b = b;
+		// 	this.c = c;
+
+		// 	alert(this.score+a+b);
+		// }
+		
+//第七题
+		// var a = 10;
+		// function test(){
+		// 	var a = 5;
+		// 	alert(a);
+		// 	alert(this.a);
+		// 	// var a;
+		// 	// alert(this.a);
+		// 	// alert(a);
+		// }
+		// test();
+		// //var t1 = new test();
+
+//第八题
+		// var sayName = function(){
+		// 	console.log('My name is '+this.name);
+		// }
+		// var stacey = {
+		// 	name:'Stacey',
+		// 	age:34
+		// }
+
+		// sayName();
+
+
+//第九题
+		// function outerFun()
+		// 	{
+		// 	 var a =0;
+		// 	 alert(a);  
+		// 	}
+		// 	var a=4;
+		// 	outerFun();
+		// 	alert(a);
+
+			// 因为在函数内部使用了var关键字 维护a的作用域在outFun()内部.
+
+//第十题
+			// function outerFun()
+			// {
+			//  //没有var 
+			//  a =0;
+			//  alert(a);  
+			// }
+			// var a=4;
+			// outerFun();
+			// alert(a);
+
+</script>
+</body>
+</html>
